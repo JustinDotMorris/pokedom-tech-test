@@ -10,8 +10,9 @@ const renderCard = (pokemonArray) => {
     pokemonArray.forEach((pokemon) => {
         htmlString += `
         <section>
-            <img>${pokemon.sprite}</img>    
+            <img src="${pokemon.sprite}" >    
             <h1>${pokemon.name}</h1>
+            <p>${pokemon.types}</p>
         </section>
         
         `;
