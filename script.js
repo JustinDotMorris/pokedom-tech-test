@@ -1,8 +1,7 @@
 import { pokemonArray } from "./data/pokemon.js";
 
 const cardContainer = document.querySelector(".card-container");
-
-// console.log(pokemonArray);
+// const backgroundColour = document.querySelector("$color-foreground")
 
 const renderCard = (pokemonArray) => { 
     let htmlString = "";
@@ -14,11 +13,14 @@ const renderCard = (pokemonArray) => {
             <h1>${pokemon.name}</h1>
             <p>${pokemon.types}</p>
         </section>
-        
         `;
     });
 
     cardContainer.innerHTML = htmlString;
+    document.getElementById(renderCard).style.color="blue";
 
 };
+function changeCard() {
+    
+}
 renderCard(pokemonArray);
